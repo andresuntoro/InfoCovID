@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Website Informasi Corona Indonesia">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Corona, COVID-19, Indonesia">
+	<meta name="author" content="Andre Suntoro">
+	<link rel="icon" href="https://img.icons8.com/dusk/64/000000/coronavirus.png" type="image/png" sizes="16x16">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+	<link href="style.css" rel="stylesheet">
+	<title>Informasi COVID-19 di Indonesia</title>
+</head>
+
+<body>
+	<header>
+		<div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">Tentang</h4>
+						<p class="text-muted">Website ini dibangun oleh <a href="https://github.com/andresuntoro" class="text-white">Andre Suntoro</a> yang bertujuan untuk menyediakan informasi tentang penyebaran Virus COVID-19. Sumber data diambil dari <a href="https://github.com/mathdroid/covid-19-api" class="text-white">Mathdroid</a>.
+						</p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Kontak</h4>
+						<ul class="list-unstyled">
+							<li><a href="https://id.linkedin.com/in/andresuntoro" class="text-white">LinkedIn</a></li>
+							<li><a href="https://github.com/andresuntoro" class="text-white">Github</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-dark bg-dark box-shadow">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center" onclick="location.reload()">
+					<!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> -->
+					<img src="https://img.icons8.com/dusk/64/000000/coronavirus.png" class="logo-nav" alt="Coronavirus icons made by Eucalyp">
+					<strong >InfoCovID</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main role="main" class="container">
+
+		<section class="starter-template">
+			<h1 class="display-3">COVID-19 INDONESIA</h1>
+			<p class="lead">Jumlah kasus COVID-19 dunia mencapai: <h5 class="text-info" id="kasusDunia">???</h5></p>
+		</section>
+		<section class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+						<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+							<div class="card-header">Jumlah Kasus</div>
+							<div class="card-body">
+								<p class="card-text" id="jumlahKasus">???</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+						<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+							<div class="card-header">Sembuh</div>
+							<div class="card-body">
+								<p class="card-text" id="sembuh">???</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+						<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+							<div class="card-header">Perawatan</div>
+							<div class="card-body">
+								<p class="card-text" id="perawatan">???</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+						<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+							<div class="card-header">Meninggal</div>
+							<div class="card-body">
+								<p class="card-text" id="meninggal">???</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main><!-- /.container -->
+
+	<footer class="footer text-muted">
+		<div class="container text-center">
+			<p>Made with &hearts; by <a href="https://github.com/andresuntoro" target="_blank" class="">Andre Suntoro</a></p>
+		</div>
+	</footer>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="corona.js"></script>
+</body>
+</html>
