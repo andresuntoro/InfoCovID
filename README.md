@@ -1,5 +1,6 @@
 # InfoCovID
 Sebuah website yang dibangun untuk menyediakan informasi COVID19 dan pembelajaran VanillaJS.
+Dapat diakses secara _ONLINE_ melalui: [**andresuntoro.github.io/InfoCovID/**](https://andresuntoro.github.io/InfoCovID).
 
 ## Apa itu InfoCovID
 
