@@ -1,5 +1,13 @@
-$( document ).ready(function() {
-	console.log( "ready!" ); // tes
+domReady(function() {
+
+	//Navbar Header
+	document.addEventListener("click", function(event) {
+		if (event.target.classList.contains("navbar-toggler") || event.target.classList.contains("navbar-toggler-icon")) {
+			document.getElementById("navbarHeader").classList.toggle("show");
+		} else if (event.target.classList.contains("linkprofil")) {
+			document.getElementById("navbarHeader").classList.remove("show");
+		}
+	});
 	
 	// Panggil Fungsi
 	fetchGlobalCovid();
@@ -19,7 +27,7 @@ $( document ).ready(function() {
 					return;  
 				}  
 				response.json().then(function(data) {
-					document.querySelector("#kasusDunia").innerHTML = number(data['confirmed']['value']);
+					document.getElementById("kasusDunia").innerHTML = number(data['confirmed']['value']);
 				});  
 			}  
 			)  
@@ -28,7 +36,7 @@ $( document ).ready(function() {
 		});
 	}
 
-	function fetchIndoCovid(argument) {
+	function fetchIndoCovid() {
 
 		fetch('https://indonesia-covid-19.mathdro.id/api')  
 		.then(  
@@ -38,10 +46,10 @@ $( document ).ready(function() {
 					return;  
 				}  
 				response.json().then(function(data) {  
-					document.querySelector("#meninggal").innerHTML = number(data['meninggal']);
-					document.querySelector("#sembuh").innerHTML = number(data['sembuh']);
-					document.querySelector("#perawatan").innerHTML = number(data['perawatan']);
-					document.querySelector("#jumlahKasus").innerHTML = number(data['jumlahKasus']);
+					document.getElementById("meninggal").innerHTML = number(data['meninggal']);
+					document.getElementById("sembuh").innerHTML = number(data['sembuh']);
+					document.getElementById("perawatan").innerHTML = number(data['perawatan']);
+					document.getElementById("jumlahKasus").innerHTML = number(data['jumlahKasus']);
 				});  
 			}  
 			)  
